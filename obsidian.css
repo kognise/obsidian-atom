@@ -1,0 +1,259 @@
+.theme-dark {
+    --background-primary: #272b34;
+    --background-primary-alt: #20242b;
+    --background-secondary: #20242b;
+    --background-secondary-alt: #1a1e24;
+    --background-accent: #000;
+    --background-modifier-border: #333;
+    --background-modifier-form-field: rgba(0, 0, 0, 0.3);
+    --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
+    --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
+    --background-modifier-success: #539126;
+    --background-modifier-error: #3d0000;
+    --background-modifier-error-rgb: 61, 0, 0;
+    --background-modifier-error-hover: #470000;
+    --background-modifier-cover: rgba(0, 0, 0, 0.6);
+    --text-accent: #61afef;
+    --text-accent-hover: #69bafd;
+    --text-normal: #dcddde;
+    --text-muted: #888;
+    --text-faint: #555;
+    --text-error: #e16d76;
+    --text-error-hover: #c9626a;
+    --text-highlight-bg: rgba(255, 255, 0, 0.4);
+    --text-selection: rgba(0, 122, 255, 0.2);
+    --text-on-accent: #dcddde;
+    --interactive-normal: #20242b;
+    --interactive-hover: #353b47;
+    --interactive-accent: #4c78cc;
+    --interactive-accent-rgb: 76, 120, 204;
+    --interactive-accent-hover: #5082df;
+    --scrollbar-active-thumb-bg: rgba(255, 255, 255, 0.2);
+    --scrollbar-bg: rgba(255, 255, 255, 0.05);
+    --scrollbar-thumb-bg: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    --font-monospace: 'Fira Code', 'Source Code Pro', monospace;
+}
+
+mjx-container[jax='CHTML'][display='true'] {
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+}
+
+.cm-s-obsidian pre.HyperMD-codeblock, .cm-s-obsidian span.cm-inline-code {
+    color: inherit;
+}
+
+.markdown-preview-section:not(:first-child) h1,
+.markdown-preview-section:not(:first-child) h2,
+.markdown-preview-section:not(:first-child) h3,
+.markdown-preview-section:not(:first-child) h4,
+.markdown-preview-section:not(:first-child) h5,
+.markdown-preview-section:not(:first-child) h6 {
+    margin-top: 40px !important;
+}
+
+h1, h2, h3, h4, h5, h6, strong, b, .view-header-title {
+    font-weight: 600;
+}
+
+.workspace > .workspace-split > .workspace-leaf:first-of-type:last-of-type .view-header {
+    border: none;
+}
+
+.status-bar, .side-dock.mod-right, .side-dock.mod-left {
+    border-color: #18191e;
+    border-width: 1px;
+}
+
+.status-bar {
+    --bar-vertical-padding: 4px;
+    --bar-height: calc(22px + (var(--bar-vertical-padding) * 2));
+    line-height: 20px;
+    padding: 0 20px;
+    height: var(--bar-height);
+    max-height: var(--bar-height);
+    min-height: var(--bar-height);
+    overflow: hidden;
+}
+
+.status-bar-item {
+    margin: auto 0;
+}
+
+.status-bar-item > * {
+    padding-top: var(--bar-vertical-padding) !important;
+    padding-bottom: var(--bar-vertical-padding) !important;
+}
+
+.nav-file.is-active {
+    --background-secondary-alt: var(--interactive-accent);
+}
+
+.nav-file:not(.is-active):hover, .nav-folder:hover {
+    --background-secondary-alt: transparent;
+}
+
+.side-dock-plugin-panel-inner {
+    padding-left: 6px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Source: https://github.com/AGMStudio/prism-theme-one-dark */
+
+code[class*='language-'],
+pre[class*='language-'] {
+    color: #ABB2BF !important;
+    text-align: left !important;
+    white-space: pre !important;
+    word-spacing: normal !important;
+    word-break: normal !important;
+    word-wrap: normal !important;
+    line-height: 1.5 !important;
+    -moz-tab-size: 4 !important;
+    -o-tab-size: 4 !important;
+    tab-size: 4 !important;
+    -webkit-hyphens: none !important;
+    -moz-hyphens: none !important;
+    -ms-hyphens: none !important;
+    hyphens: none !important;
+}
+
+/* Code blocks */
+pre[class*='language-'] {
+    padding: 1em !important;
+    margin: .5em 0 !important;
+    overflow: auto !important;
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'] {
+    padding: .1em !important;
+    border-radius: .3em !important;
+    white-space: normal !important;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #5C6370 !important;
+}
+
+.token.punctuation {
+    color: #abb2bf !important;
+}
+
+.token.selector,
+.token.tag {
+    color: #e06c75 !important;
+}
+
+.token.property,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.attr-name,
+.token.deleted {
+    color: #d19a66 !important;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.builtin,
+.token.inserted {
+    color: #98c379 !important;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #56b6c2 !important;
+}
+
+.token.atrule,
+.token.keyword {
+    color: #c678dd !important;
+}
+
+.token.function,
+.token.macro.property {
+    color: #61afef !important;
+}
+
+.token.class-name {
+    color: #e5c07b !important;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #c678dd !important;
+}
+
+.token.important,
+.token.bold {
+    font-weight: bold !important;
+}
+
+.token.italic {
+    font-style: italic !important;
+}
+
+.token.entity {
+    cursor: help !important;
+}
+
+pre.line-numbers {
+    position: relative !important;
+    padding-left: 3.8em !important;
+    counter-reset: linenumber !important;
+}
+
+pre.line-numbers > code {
+    position: relative !important;
+}
+
+.line-numbers .line-numbers-rows {
+    position: absolute !important;
+    pointer-events: none !important;
+    top: 0 !important;
+    font-size: 100% !important;
+    left: -3.8em !important;
+    width: 3em !important; /* works for line-numbers below 1000 lines */
+    letter-spacing: -1px !important;
+    border-right: 0 !important;
+
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+
+.line-numbers-rows > span {
+    pointer-events: none !important;
+    display: block !important;
+    counter-increment: linenumber !important;
+}
+
+.line-numbers-rows > span:before {
+    content: counter(linenumber) !important;
+    color: #5C6370 !important;
+    display: block !important;
+    padding-right: 0.8em !important;
+    text-align: right !important;
+}
