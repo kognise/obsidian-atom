@@ -103,14 +103,23 @@ body {
   --font-monospace: 'Fira Code', 'Source Code Pro', monospace;
 }
 
-mjx-container[jax='CHTML'][display='true'] {
+mjx-container[jax='CHTML'] {
   text-align: left;
   outline: none;
   font-size: 20px;
 }
 
-.cm-s-obsidian pre.HyperMD-codeblock, .cm-s-obsidian span.cm-inline-code {
+.cm-s-obsidian pre.HyperMD-codeblock,
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end) {
   color: inherit;
+}
+
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian span.cm-math,
+.cm-s-obsidian span.hmd-fold-math-placeholder {
+  font-weight: 600;
+  font-style: normal;
 }
 
 .markdown-preview-section:not(:first-child) h1,
