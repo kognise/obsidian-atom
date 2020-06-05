@@ -193,7 +193,7 @@ a:hover {
 .theme-light :not(pre) > code[class*='language-'],
 .theme-light pre[class*='language-'] {
   background: var(--background-primary);
-  border: 2px solid var(--background-primary-alt);
+  outline: 2px solid var(--background-primary-alt);
 }
 
 .theme-light .token.operator,
