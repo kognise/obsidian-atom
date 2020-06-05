@@ -1,4 +1,4 @@
-# Obsidian One
+# Obsidian Atom
 
 A theme for Obsidian based on Atom's One Dark theme. One Light is coming soon.
 
