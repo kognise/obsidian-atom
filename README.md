@@ -2,6 +2,8 @@
 
 A theme for Obsidian based on Atom's One Dark theme. One Light is coming soon.
 
+![Screenshot](screenshot.png)
+
 ## Installation
 
 1. Download obsidian.css to your Obsidian vault folder
