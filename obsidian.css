@@ -4,7 +4,7 @@
   --background-secondary: #20242b;
   --background-secondary-alt: #1a1e24;
   --background-accent: #000;
-  --background-modifier-border: #333;
+  --background-modifier-border: #424958;
   --background-modifier-form-field: rgba(0, 0, 0, 0.3);
   --background-modifier-form-field-highlighted: rgba(0, 0, 0, 0.22);
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.3);
@@ -50,7 +50,7 @@
   --background-secondary: #eaeaeb;
   --background-secondary-alt: #dbdbdc;
   --background-accent: #fff;
-  --background-modifier-border: #ddd;
+  --background-modifier-border: #eaeaeb;
   --background-modifier-form-field: #fff;
   --background-modifier-form-field-highlighted: #fff;
   --background-modifier-box-shadow: rgba(0, 0, 0, 0.1);
@@ -88,6 +88,15 @@
   --aqua: #0084bc;
   --yellow: #e35649;
   --orange: #986800;
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+  top: -1px;
+  cursor: pointer;
+}
+
+blockquote {
+  margin: 20px 0;
 }
 
 body {
