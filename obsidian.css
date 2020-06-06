@@ -90,6 +90,12 @@
   --orange: #986800;
 }
 
+.nav-file-title, .nav-folder-title {
+  display: flex;
+  align-items: baseline;
+  flex-direction: row;
+}
+
 .nav-file-title-content, .nav-folder-title-content {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -182,8 +188,9 @@ h1, h2, h3, h4, h5, h6, strong, b, .view-header-title {
   --text-normal: #ffffff;
 }
 
-.nav-file:not(.is-active):hover, .nav-folder:hover {
-  --background-secondary-alt: transparent;
+.nav-file:not(.is-active):hover .nav-file-title,
+.nav-folder:hover .nav-folder-content {
+  background-color: transparent;
 }
 
 .side-dock-plugin-panel-inner {
