@@ -194,11 +194,13 @@ h1, h2, h3, h4, h5, h6, strong, b, .view-header-title {
   padding-left: 6px;
 }
 
-a {
+a,
+.markdown-preview-view .internal-link {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+.markdown-preview-view .internal-link:hover {
   text-decoration: underline;
 }
 
