@@ -90,6 +90,23 @@
   --orange: #986800;
 }
 
+.nav-file-title, .nav-folder-title {
+  height: 30px;
+}
+
+.nav-file-title-content, .nav-folder-title-content {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.markdown-preview-section {
+  max-width: 900px;
+  line-height: 26px;
+  margin: 0 auto;
+}
+
 .markdown-preview-view .task-list-item-checkbox {
   top: -1px;
   cursor: pointer;
@@ -193,7 +210,7 @@ a:hover {
 .theme-light :not(pre) > code[class*='language-'],
 .theme-light pre[class*='language-'] {
   background: var(--background-primary);
-  outline: 2px solid var(--background-primary-alt);
+  border: 2px solid var(--background-primary-alt);
 }
 
 .theme-light .token.operator,
