@@ -90,6 +90,42 @@
   --orange: #986800;
 }
 
+body {
+  -webkit-font-smoothing: auto;
+}
+
+.markdown-preview-view .task-list-item-checkbox {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: 1px solid var(--text-muted);
+  border-radius: 2px;
+  position: relative;
+  width: 1.3em;
+  height: 1.3em;
+  margin: 0;
+  outline: none;
+  margin-right: 4px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  vertical-align: baseline;
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked {
+  border: none;
+  background-color: var(--interactive-accent);
+}
+
+.markdown-preview-view .task-list-item-checkbox:checked::before {
+  content: ' ';
+  position: absolute;
+  background-color: white;
+  left: 2px;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 14 14\'%3E%3Cpolygon points=\'5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039\'%3E%3C/polygon%3E%3C/svg%3E');
+}
+
 .nav-file-title, .nav-folder-title {
   display: flex;
   align-items: baseline;
@@ -103,15 +139,10 @@
   display: block;
 }
 
-.markdown-preview-section {
-  max-width: 900px;
+.markdown-preview-view.is-readable-line-width .markdown-preview-section,
+.markdown-source-view.is-readable-line-width .CodeMirror {
+  max-width: 900px !important;
   line-height: 26px;
-  margin: 0 auto;
-}
-
-.markdown-preview-view .task-list-item-checkbox {
-  top: -1px;
-  cursor: pointer;
 }
 
 blockquote {
@@ -130,7 +161,8 @@ mjx-container[jax='CHTML'] {
 
 .cm-s-obsidian pre.HyperMD-codeblock,
 .cm-s-obsidian span.cm-inline-code,
-.cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end) {
+.cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
+.markdown-preview-view code {
   color: inherit;
 }
 
@@ -139,6 +171,10 @@ mjx-container[jax='CHTML'] {
 .cm-s-obsidian span.hmd-fold-math-placeholder {
   font-weight: 600;
   font-style: normal;
+}
+
+.markdown-preview-view code {
+  vertical-align: text-top;
 }
 
 .markdown-preview-section:not(:first-child) h1,
