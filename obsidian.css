@@ -94,6 +94,13 @@ body {
   -webkit-font-smoothing: auto;
 }
 
+.tag, .tag:hover {
+  color: var(--yellow);
+  background-color: var(--background-primary-alt);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
 .markdown-preview-view .task-list-item-checkbox {
   -webkit-appearance: none;
   box-sizing: border-box;
