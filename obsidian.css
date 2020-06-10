@@ -258,7 +258,18 @@ a:hover,
 .theme-light :not(pre) > code[class*='language-'],
 .theme-light pre[class*='language-'] {
   background: var(--background-primary);
-  border: 2px solid var(--background-primary-alt);
+  box-shadow: inset 0 0 0 1px var(--background-primary-alt);
+  border-radius: 4px;
+}
+
+.markdown-preview-view blockquote {
+  border-radius: 4px;
+}
+
+.markdown-preview-view .markdown-embed,
+.markdown-preview-view .file-embed {
+  margin: 0;
+  border-radius: 4px;
 }
 
 .theme-light .token.operator,
