@@ -94,6 +94,15 @@ body {
   -webkit-font-smoothing: auto;
 }
 
+.search-result-file-title {
+  color: var(--blue);
+}
+
+li {
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+}
+
 .tag, .tag:hover {
   color: var(--yellow);
   background-color: var(--background-primary-alt);
