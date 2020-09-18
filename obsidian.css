@@ -191,6 +191,7 @@ mjx-container[jax='CHTML'] {
 
 .markdown-preview-view code {
   vertical-align: text-top;
+  word-break: break-word;
 }
 
 .markdown-preview-section:not(:first-child) h1,
