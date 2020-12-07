@@ -175,7 +175,10 @@ mjx-container[jax='CHTML'] {
   outline: none;
   font-size: 20px;
 }
-
+.cm-s-obsidian
+{
+    font-family: var(--font-monospace) !important;
+}
 .cm-s-obsidian pre.HyperMD-codeblock,
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
