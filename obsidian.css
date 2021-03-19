@@ -339,6 +339,11 @@ a:hover,
   padding: 0 20px;
 }
 
+.markdown-embed-link, .file-embed-link {
+  left: 8px;
+  right: unset;
+}
+
 .theme-light .token.operator,
 .theme-light .token.entity,
 .theme-light .token.url,
