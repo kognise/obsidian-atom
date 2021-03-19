@@ -94,6 +94,27 @@ body {
   -webkit-font-smoothing: auto;
 }
 
+.titlebar {
+  background-color: var(--background-secondary-alt);
+}
+
+.tooltip {
+  background-color: var(--background-secondary-alt);
+}
+
+.tooltip-arrow {
+  border-right: 5px solid var(--background-secondary-alt) !important;
+}
+
+.dropdown {
+  cursor: pointer;
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%234c78cc%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
+}
+
+.dropdown:hover {
+  background-color: 1px solid var(--background-modifier-border);
+}
+
 .search-result-file-title {
   color: var(--blue);
 }
@@ -143,10 +164,26 @@ li {
   -webkit-mask-image: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 14 14\'%3E%3Cpolygon points=\'5.5 11.9993304 14 3.49933039 12.5 2 5.5 8.99933039 1.5 4.9968652 0 6.49933039\'%3E%3C/polygon%3E%3C/svg%3E');
 }
 
+.nav-file, .nav-folder {
+  padding: 1px 2px;
+}
+
 .nav-file-title, .nav-folder-title {
+  cursor: default;
   display: flex;
   align-items: baseline;
   flex-direction: row;
+  --text-normal: var(--text-muted);
+}
+
+body:not(.is-grabbing) .nav-file .nav-file-title:hover:not(.is-active),
+body:not(.is-grabbing) .nav-folder .nav-folder-title:hover:not(.is-active) {
+  --background-secondary-alt: transparent;
+}
+
+.nav-file .is-active {
+  --background-secondary-alt: var(--interactive-accent);
+  --text-normal: #ffffff;
 }
 
 .nav-file-title-content, .nav-folder-title-content {
@@ -164,6 +201,7 @@ li {
 
 blockquote {
   margin: 20px 0;
+  border-radius: 4px !important;
 }
 
 body {
@@ -237,16 +275,6 @@ h1, h2, h3, h4, h5, h6, strong, b, .view-header-title {
   padding-bottom: var(--bar-vertical-padding) !important;
 }
 
-.nav-file.is-active {
-  --background-secondary-alt: var(--interactive-accent);
-  --text-normal: #ffffff;
-}
-
-.nav-file:not(.is-active):hover .nav-file-title,
-.nav-folder:hover .nav-folder-content {
-  background-color: transparent;
-}
-
 .side-dock-plugin-panel-inner {
   padding-left: 6px;
 }
@@ -273,14 +301,22 @@ a:hover,
   border-radius: 4px;
 }
 
-.markdown-preview-view blockquote {
-  border-radius: 4px;
-}
-
-.markdown-preview-view .markdown-embed,
-.markdown-preview-view .file-embed {
+.markdown-embed,
+.file-embed {
   margin: 0;
   border-radius: 4px;
+  margin: 0 !important;
+  margin-inline-start: 30px !important;
+  margin-inline-end: 30px !important;
+}
+
+.markdown-embed {
+  border: 1px solid var(--background-modifier-border);
+  border-left-width: 5px;
+}
+
+.markdown-embed .markdown-preview-view {
+  padding: 0 20px;
 }
 
 .theme-light .token.operator,
@@ -289,12 +325,6 @@ a:hover,
 .theme-light .language-css .token.string,
 .theme-light .style .token.string {
   background: transparent;
-}
-
-body:not(.is-grabbing) .nav-file:not(.is-active) .nav-file-title:hover,
-body:not(.is-grabbing) .nav-folder:not(.is-active) .nav-folder-title:hover {
-  --text-normal: var(--text-muted);
-  --background-secondary-alt: var(--background-secondary);
 }
 
 /* Source: https://github.com/AGMStudio/prism-theme-one-dark */
