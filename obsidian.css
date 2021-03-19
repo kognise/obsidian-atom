@@ -112,7 +112,7 @@ body {
 }
 
 .dropdown:hover {
-  background-color: 1px solid var(--background-modifier-border);
+  background-color: var(--background-modifier-form-field);
 }
 
 .search-result-file-title {
