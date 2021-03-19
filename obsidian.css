@@ -169,6 +169,7 @@ li {
 }
 
 .nav-file-title, .nav-folder-title {
+  width: 100%;
   cursor: default;
   display: flex;
   align-items: baseline;
