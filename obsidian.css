@@ -98,12 +98,29 @@ body {
   background-color: var(--background-secondary-alt);
 }
 
-.tooltip {
-  background-color: var(--background-secondary-alt);
+.titlebar-inner {
+  color: var(--text-normal);
 }
 
-.tooltip-arrow {
-  border-right: 5px solid var(--background-secondary-alt) !important;
+.tooltip {
+  background-color: var(--background-secondary-alt);
+  color: var(--text-muted);
+}
+
+.tooltip:not(.mod-right):not(.mod-left):not(.mod-top) .tooltip-arrow {
+  border-bottom-color: var(--background-secondary-alt) !important;
+}
+
+.mod-right .tooltip-arrow {
+  border-right-color: var(--background-secondary-alt) !important;
+}
+
+.mod-left .tooltip-arrow {
+  border-left-color: var(--background-secondary-alt) !important;
+}
+
+.mod-top .tooltip-arrow {
+  border-top-color: var(--background-secondary-alt) !important;
 }
 
 .dropdown {
