@@ -141,7 +141,7 @@ li {
   padding-bottom: 0.5px;
 }
 
-.tag, .tag:hover {
+a.tag, a.tag:hover {
   color: var(--yellow);
   background-color: var(--background-primary-alt);
   padding: 2px 4px;
