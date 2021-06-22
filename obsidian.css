@@ -262,6 +262,15 @@ mjx-container[jax='CHTML'] {
   margin-top: 40px !important;
 }
 
+.markdown-preview-section h1,
+.markdown-preview-section h2,
+.markdown-preview-section h3,
+.markdown-preview-section h4,
+.markdown-preview-section h5,
+.markdown-preview-section h6 {
+  line-height: 1.2;
+}
+
 h1, h2, h3, h4, h5, h6, strong, b, .view-header-title {
   font-weight: 600;
 }
@@ -499,3 +508,4 @@ pre.line-numbers > code {
   padding-right: 0.8em !important;
   text-align: right !important;
 }
+
