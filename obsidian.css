@@ -207,6 +207,7 @@ body:not(.is-grabbing) .nav-folder .nav-folder-title:hover:not(.is-active) {
 }
 
 .nav-file-title-content, .nav-folder-title-content {
+  text-indent: 0;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -508,4 +509,3 @@ pre.line-numbers > code {
   padding-right: 0.8em !important;
   text-align: right !important;
 }
-
