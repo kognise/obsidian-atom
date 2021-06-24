@@ -232,7 +232,10 @@ body {
 mjx-container[jax='CHTML'] {
   text-align: left;
   outline: none;
-  font-size: 20px;
+}
+
+.math-block {
+  font-size: 1.25em;
 }
 
 .cm-s-obsidian pre.HyperMD-codeblock,
