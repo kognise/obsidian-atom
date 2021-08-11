@@ -319,7 +319,7 @@ a:hover, .markdown-preview-view .internal-link:hover {
   border-radius: 4px;
 }
 
-.markdown-embed, .file-embed {
+.markdown-embed:not(.hover-popover .markdown-embed), .file-embed {
   margin: 0;
   border-radius: 4px;
   margin: 0 !important;
