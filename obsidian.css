@@ -242,13 +242,15 @@ mjx-container[jax='CHTML'] {
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-math:not(.cm-formatting-math-begin):not(.cm-formatting-math-end),
 .markdown-preview-view code {
-  color: inherit;
+  /* fix `` tag color */
+  color: #98c379;
 }
 
 .cm-s-obsidian span.cm-inline-code,
 .cm-s-obsidian span.cm-math,
 .cm-s-obsidian span.hmd-fold-math-placeholder {
-  font-weight: 600;
+  /* fix tag size */
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -511,4 +513,14 @@ pre.line-numbers > code {
   display: block !important;
   padding-right: 0.8em !important;
   text-align: right !important;
+}
+
+/* fix header color */
+.cm-header {
+  color: #e16d76;
+}
+
+/* fix url color */
+.cm-s-obsidian span.cm-url{
+  color: #c678dd !important;
 }
