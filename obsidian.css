@@ -470,15 +470,3 @@ pre.line-numbers>code {
   padding-right: 0.8em !important;
   text-align: right !important;
 }
-
-/* fix header color */
-
-.cm-header {
-  color: #e16d76;
-}
-
-/* fix url color */
-
-.cm-s-obsidian span.cm-url {
-  color: #c678dd !important;
-}
