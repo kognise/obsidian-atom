@@ -252,7 +252,7 @@ mjx-container[jax='CHTML'] {
 }
 
 .markdown-preview-view code {
-  vertical-align: text-top;
+  vertical-align: 0;
   word-break: break-word;
 }
 
