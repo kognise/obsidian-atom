@@ -45,6 +45,8 @@
   --blue: #61afef;
   --yellow: #e5c07b;
 
+  --nav-item-color-active: #ffffff;
+
   --background-modifier-hover: hsla(var(--accent-h), calc(var(--accent-s) - 35%), var(--accent-l), 0.06);
   --divider-color-hover: #404754;
 }
@@ -95,6 +97,8 @@
   --aqua: #0084bc;
   --yellow: #e35649;
   --orange: #986800;
+
+  --nav-item-color-active: var(--text-normal);
 }
 
 .theme-dark, .theme-light {
@@ -115,7 +119,6 @@
   --checkbox-color-hover: var(--text-accent-hover);
 
   --nav-item-background-active: var(--interactive-accent);
-  --nav-item-color-active: #ffffff;
 
   --tag-color: var(--yellow);
   --tag-background: var(--background-primary-alt);
